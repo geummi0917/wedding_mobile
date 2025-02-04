@@ -1,0 +1,315 @@
+body {
+    width: 100vw;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+html {
+    /* scroll-snap-type: y proximity;
+    scroll-behavior: smooth; */
+}
+
+p {
+    text-align: center;
+}
+
+.sakura_background {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    justify-content: center;
+    background-color: #f5eca629;
+}
+
+.wrapper {
+    width: 720px;
+    height: 100%;
+    justify-content: center;
+    /* padding: 3rem 0; */
+    background-color: white;
+}
+
+.main_title {
+    width: 100%;
+    margin: 3.5rem 0;
+}
+
+.main_title p {
+    width: 100%;
+    font-family: 'Deluxe Edition - Demo', sans-serif;
+    font-size: 4rem;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.intro {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 8rem;
+}
+
+.intro img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.host {
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.host p {
+    font-family: 'MaruBuriBold';
+    font-size: 1.3rem;
+    letter-spacing: 0.33em;
+    color: #000000;
+}
+
+.detail_info p {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    color: #000000;
+}
+
+.invite {
+    text-align: center;
+    margin: 0 auto;
+    padding: 6.5rem 0;
+}
+
+.invite img {
+    height: 2rem;
+    padding: 1.3rem;
+}
+
+.invite h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #80a745;
+}
+
+.field p {
+    padding: 1.5rem 0;
+}
+
+.field span {
+    font-family: 'MaruBuri';
+    font-size: 1.1rem;
+    line-height: 2.35rem;
+}
+
+.name {
+    padding: 4.5rem 0;
+}
+
+.name p {
+    font-family: 'MaruBuri';
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+.name p:first-child {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+}
+
+.name span {
+    padding-left: 0.7rem;
+}
+
+.name_bold {
+    font-family: 'MaruBuriBold';
+    font-size: 1.1rem;
+}
+
+.date p {
+    padding-top: 9rem;
+}
+
+.date span {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.3rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.15rem;
+}
+
+.calendar {
+    padding: 3rem;
+}
+
+.location_title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0 2.5rem 0;
+}
+
+.location_title p {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.location_title h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #80a745;
+}
+
+.location {
+    text-align: center;
+    margin: 0 4rem;
+}
+
+.location_info p {
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.location_info p span {
+    line-height: 1.7rem;
+    font-family: 'MaruBuri';
+    font-size: 0.9rem;
+}
+
+.location_info p span:first-child {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.1rem;
+}
+
+.map_wrapper {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#map {
+    width: 100%;
+    height: 10rem;
+}
+
+.directions p {
+    padding: 0.7rem 0;
+    text-align: left;
+}
+
+.directions p span {
+    margin-bottom: 0.2rem;
+    line-height: 1.3rem;
+    font-family: 'MaruBuri';
+    font-size: 0.75rem;
+}
+
+.directions p span:first-child {
+    font-family: 'MaruBuriBold';
+    font-size: 0.8rem;
+    color: #80a745;
+}
+
+.wedding_gallery {
+    height: 100%;
+    padding: 0 5rem;
+}
+
+.gallery_title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0 2.5rem 0;
+}
+
+.gallery_title p {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.gallery_title h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #80a745;
+}
+
+.gallery_wrapper {
+    width: 100%;
+    height: 720px;
+    margin: 0 auto;
+    /* background-color: #fcfaf9; */
+}
+
+.gift_title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 6rem 0 2.5rem 0;
+}
+
+.gift_title p {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.gift_title h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #80a745;
+}
+
+.guestbook_title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0 2.5rem 0;
+}
+
+.guestbook_title p {
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 20px 0;
+}
+
+.guestbook_title h2 {
+    font-family: 'MaruBuriSemiBold';
+    font-size: 1.25rem;
+    color: #80a745;
+}
+
+
+/* 폰트 */
+
+@font-face {
+    font-family: 'MaruBuri';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'MaruBuriSemiBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'MaruBuriBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format("woff2"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.ttf) format("truetype");
+}

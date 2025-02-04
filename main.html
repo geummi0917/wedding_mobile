@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 웨딩 청첩장</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript"src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=37e0be27c557956e07d2250518e01178"></script>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <!-- <link type="text/css" rel="stylesheet" media="screen" href="./css/jquery_sakura.css" /> -->
+    <link href="https://fonts.cdnfonts.com/css/deluxe-edition-demo" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- <section class="sakura_background"></section> -->
+    <section class="contents">
+        <div class="wrapper">
+            <div class="main_title">
+                <p>Happy Wedding</p>
+            </div>
+            <div class="intro">
+                <img src="./img/main_img.jpg" alt="메인 이미지" class="main_img">
+                <div class="host">
+                    <p>OOO ♥ OOO</p>
+                </div>
+            </div>
+            <div class="detail_info">
+                <p>2025.01.05 월요일 낮 12시 30분</p>
+                <p>OO웨딩홀 2층 단독홀</p>
+            </div>
+        </div>
+    </section>
+    <section class="contents">
+        <div class="wrapper">
+            <div class="invite">
+                <img src="./img/title.jpg" alt="">
+                <h2>소중한 분들을 초대합니다</h2>
+            </div>
+            <div class="field">
+                <p>
+                    <span>서로 마주 보며 다져온 사랑을<br>
+                        이제 함께 한곳을 바라보며 걸어갈 수 있는<br>
+                        큰 사랑으로 키우고자 합니다.</span><br>
+                    <br>
+                    <span>저희 두 사람이<br>
+                        사랑의 이름으로 지켜나갈 수 있게<br>
+                        앞날을 축복해 주시면 감사하겠습니다.</span><br>
+                </p>
+            </div>
+            <div class="name">
+                <p></p>
+                <p>
+                    <span class="name_bold">OOO · OOO </span><span>의 차남 </span><span class="name_bold">OO</span>
+                </p>
+                <p>
+                    <span class="name_bold">OOO · OOO </span><span>의 장녀 </span><span class="name_bold">OO</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="contents">
+        <div class="wrapper">
+            <div class="date">
+                <p>
+                    <span>2025.01.05</span><br>
+                    <span>월요일 낮 12시 30분</span>
+                </p>
+            </div>
+            <div class="calendar">
+                <h2 id="weddingMonth"></h2>
+                <div class="calendar-dates" id="calendarDates"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contents">
+        <div class="wrapper">
+            <div class="location_title">
+                <p></p>
+                <h2>오시는 길</h2>
+            </div>
+            <div class="location">
+                <div class="location_info">
+                    <p>
+                        <span>OO 웨딩홀 2층 단독홀</span><br>
+                        <span>서울시 강남구 OO대로 12</span><br>
+                        <span>T. 02-123-4567</span><br>
+                    </p>
+                </div>
+                <div class="map_wrapper">
+                    <div id="map"></div>
+                </div>
+                <div class="directions">
+                    <p>
+                        <span>버스 OO 주민센터 하차</span><br>
+                        <span>간선 : 123, 456</span><br>
+                        <span>지선 : 1111, 2222</span><br>
+                        <span>직행 : 500-2, 9407, 9507, 9607</span><br>
+                    </p>
+                    <p>
+                        <span>지하철</span><br>
+                        <span>7호선 강남구청역 1번 출구 도보 10분거리</span><br>
+                    </p>
+                    <p>
+                        <span>주차</span><br>
+                        <span>OO웨딩홀 건물 지하 및 야외 별관 주차장</span><br>
+                        <span>(2시간 무료 주차)</span><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contents">
+        <div class="wrapper">
+            <div class="wedding_gallery">
+                <div class="gallery_title">
+                    <p></p>
+                    <h2>웨딩 갤러리</h2>
+                </div>
+                <div class="gallery_wrapper">
+                    <div style="--swiper-navigation-color: #f5d3cc; --swiper-pagination-color: #f5d3cc" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_01.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_02.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_03.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_04.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_05.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_06.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_07.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_08.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./img/gallery-img/gallery_09.jpg" />
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                      <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_01.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_02.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_03.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_04.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_05.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_06.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_07.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_08.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./img/gallery-img/gallery_09.jpg" />
+                            </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+    </section>
+    <!-- <section class="contents">
+        <div class="wrapper">
+            <div class="gift_title">
+                <p></p>
+                <h2>마음 전하시는 곳</h2>
+            </div>
+            <div class="gift_info">
+
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="contents">
+        <div class="wrapper">
+            <div class="guestbook_title">
+                <p></p>
+                <h2>방명록</h2>
+            </div>
+            <div class="guestbook">
+                <div class="notice">
+                    <p>신랑, 신부에게</p>
+                    <p>축하의 메시지를 남겨주세요.</p>
+                </div>
+                <div class="guest_input">
+                    <input type="text" id="guest_name">
+                    <input type="text" id="guest_password">
+                    <input type="text" id="guest_message">
+                </div>
+                <div class="guestbook_contents">
+
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+</body>
+
+<script src="./js/calendar.js"></script>
+<script src="./js/gallery.js"></script>
+<script src="./js/map.js"></script>
+
+</html>
